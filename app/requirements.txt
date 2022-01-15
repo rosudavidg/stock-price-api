@@ -1,1 +1,2 @@
 finnhub-python==2.4.7
+Flask==2.0.1
