@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  web:
+    build: ./app/
+    ports:
+      - "5009:5005"
+    environment:
+      BEARER_TOKEN_FILE: /run/secrets/bearer_token
+      FINNHUB_API_TOKEN_FILE: /run/secrets/finnhub_api_token
+    secrets:
+      - bearer_token
+      - finnhub_api_token
+
+secrets:
+  bearer_token:
+    file: secrets/bearer_token
+  finnhub_api_token:
+    file: secrets/finnhub_api_token
