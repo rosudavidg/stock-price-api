@@ -1,6 +1,6 @@
 ## Stock price API
 
-This project is a lightweight interface for a third public API [finnhub.io](https://finnhub.io).
+This project is a lightweight interface for a public API [finnhub.io](https://finnhub.io).
 
 Its purpose is to serve an IoT application developed for [micro:bit](https://microbit.org) that triggers an alarm when a stock price goes below or above a set threshold.
 
