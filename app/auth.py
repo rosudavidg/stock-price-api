@@ -1,5 +1,8 @@
 from flask import request, abort
-from authsecrets import BEARER_KEY
+import os
+from get_docker_secret import get_docker_secret
+
+BEARER_KEY = get_docker_secret(os.environ['BEARER_TOKEN_FILE'])
 
 
 def throw_unauthorized(f):

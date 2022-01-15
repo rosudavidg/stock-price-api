@@ -1,5 +1,8 @@
 import finnhub
-from stocksclientsecrets import FINNHUB_API_KEY
+import os
+from get_docker_secret import get_docker_secret
+
+FINNHUB_API_KEY = get_docker_secret(os.environ['FINNHUB_API_TOKEN_FILE'])
 
 
 def get_finnhub_client(api_key):
