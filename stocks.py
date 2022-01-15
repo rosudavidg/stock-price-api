@@ -22,6 +22,3 @@ def get_price(symbol):
         return get_finnhub_price(finnhub_client, symbol)
     except Exception as e:
         raise Exception(f'Could not get current price: {e.message}')
-
-
-print(get_price('AAPL'))
