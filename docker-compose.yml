@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   web:
-    image: rosudaivdg/stock_price_api_dev
+    image: rosudavidg/stock_price_api_dev:latest
     ports:
       - "5000:5000"
     environment:
